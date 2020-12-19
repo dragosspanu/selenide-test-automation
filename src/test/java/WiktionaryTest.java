@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.*;
 
-public class SelenideTest {
+public class WiktionaryTest {
 
     @BeforeEach
     public void loadWebpage() {
