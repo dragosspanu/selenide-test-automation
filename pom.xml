@@ -8,17 +8,25 @@
     <artifactId>selenide-test-automation</artifactId>
     <version>1.0</version>
 
+    <properties>
+        <selenide.version>5.17.0</selenide.version>
+        <junit.version>5.7.0</junit.version>
+        <maven.compiler.version>3.8.1</maven.compiler.version>
+        <maven.compiler.release>13</maven.compiler.release>
+        <maven.surefire.version>3.0.0-M5</maven.surefire.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
-            <version>5.14.2</version>
+            <version>${selenide.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.7.0</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -29,15 +37,15 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.8.1</version>
+                    <version>${maven.compiler.version}</version>
                     <configuration>
-                        <release>13</release>
+                        <release>${maven.compiler.release}</release>
                     </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>3.0.0-M4</version>
+                    <version>${maven.surefire.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
